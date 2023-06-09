@@ -1,4 +1,5 @@
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -11,6 +12,7 @@ function App() {
       <Signup />
       <Login />
       <Dashboard />
+      <Footer />
     </div>
   );
 }
