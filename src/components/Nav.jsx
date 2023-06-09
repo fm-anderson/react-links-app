@@ -1,9 +1,14 @@
+import {
+  LinkIcon,
+  ArrowRightOnRectangleIcon,
+} from '@heroicons/react/24/outline';
+
 function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-secondary">
       <div className="container">
         <a className="navbar-brand fw-bold" href="#">
-          LinksApp
+          LinksApp <LinkIcon width={20} />
         </a>
         <button
           className="navbar-toggler"
@@ -45,12 +50,12 @@ function Nav() {
               >
                 <li>
                   <a className="dropdown-item" href="#">
-                    Edit Profile
+                    Profile
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Edit Page
+                    Link Page
                   </a>
                 </li>
                 <li>
@@ -58,7 +63,7 @@ function Nav() {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Logout
+                    Logout <ArrowRightOnRectangleIcon width={20} />
                   </a>
                 </li>
               </ul>
