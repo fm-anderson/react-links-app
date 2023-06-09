@@ -17,4 +17,4 @@ LinksApp is a web-based service that allows users to create a customizable landi
 
 ## Created By
 
-[Anderson M.](https://github.com/fm-anderson) | [Kirsten A.](https://github.com/andkirsten) | [Tyler T.](https://github.com/Wylerlight)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;► [Anderson M.](https://github.com/fm-anderson) • [Kirsten A.](https://github.com/andkirsten) • [Michael J.](https://github.com/Michaeljaurigue) • [Tyler T.](https://github.com/Wylerlight)

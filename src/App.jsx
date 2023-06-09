@@ -1,8 +1,6 @@
-import './App.css';
-
 function App() {
   return (
-    <div>
+    <div className="container py-4 px-3 mx-auto">
       <h1>App</h1>
     </div>
   );
