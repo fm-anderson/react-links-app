@@ -1,8 +1,8 @@
-import Dashboard from '../pages/Dashboard';
-import Error from '../pages/Error';
-import Login from '../pages/Login';
 import Main from '../pages/Main';
-import Signup from '../pages/Signup';
+import Error from '../pages/Error';
+import Login from '../routes/Login';
+import Signup from '../routes/Signup';
+import Dashboard from '../routes/Dashboard';
 
 export const config = [
   {
