@@ -21,15 +21,15 @@ export const config = [
       {
         path: 'signup',
         element: <Signup />,
-        // loader: dashboardLoader,
-        // action: dashboardAction,
+        // loader: signupLoader,
+        // action: signupAction,
         errorElement: <Error />,
       },
       {
         path: 'login',
         element: <Login />,
-        // loader: budgetLoader,
-        // action: budgetAction,
+        // loader: loginLoader,
+        // action: loginAction,
         errorElement: <Error />,
       },
       {
