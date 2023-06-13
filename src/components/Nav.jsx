@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import {
   LinkIcon,
   ArrowRightOnRectangleIcon,
@@ -7,9 +8,9 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-secondary">
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#">
+        <NavLink className="navbar-brand fw-bold" to="/">
           LinksApp <LinkIcon width={20} />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,14 +25,18 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/login"
+              >
                 Login
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/signup">
                 Signup
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a

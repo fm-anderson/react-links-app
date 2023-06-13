@@ -1,18 +1,12 @@
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { config } from './utils/routesConfig';
+
+const router = createBrowserRouter(config);
 
 function App() {
   return (
     <div className="container py-4 px-3 mx-auto">
-      <Nav />
-      <h1>App</h1>
-      <Signup />
-      <Login />
-      <Dashboard />
-      <Footer />
+      <RouterProvider router={router} />
     </div>
   );
 }
