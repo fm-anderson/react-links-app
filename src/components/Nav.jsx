@@ -1,7 +1,8 @@
 import {
   LinkIcon,
   ArrowRightOnRectangleIcon,
-} from '@heroicons/react/24/outline';
+} from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -24,17 +25,23 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link
+                to="/login"
+                className="nav-link active"
+                aria-current="page"
+                href="#"
+              >
                 Login
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/signup" className="nav-link" href="#">
                 Signup
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <Link
+                to="/username"
                 className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
@@ -43,28 +50,28 @@ function Nav() {
                 aria-expanded="false"
               >
                 Username
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="/profile" className="dropdown-item" href="#">
                     Profile
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="links" className="dropdown-item" href="#">
                     Link Page
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="logout" className="dropdown-item" href="#">
                     Logout <ArrowRightOnRectangleIcon width={20} />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
