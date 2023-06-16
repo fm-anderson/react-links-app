@@ -8,9 +8,9 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-secondary">
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#">
+        <Link to="/" className="navbar-brand fw-bold" href="#">
           LinksApp <LinkIcon width={20} />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
