@@ -39,7 +39,8 @@ function Nav() {
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <Link
+                to="/username"
                 className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
@@ -48,28 +49,28 @@ function Nav() {
                 aria-expanded="false"
               >
                 Username
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="/profile" className="dropdown-item" href="#">
                     Profile
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="links" className="dropdown-item" href="#">
                     Link Page
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to="logout" className="dropdown-item" href="#">
                     Logout <ArrowRightOnRectangleIcon width={20} />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
