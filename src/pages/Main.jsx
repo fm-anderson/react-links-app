@@ -4,13 +4,13 @@ import Footer from '../components/Footer';
 
 const Main = () => {
   return (
-    <div className="layout">
+    <>
       <Nav />
-      <main>
+      <main className="container">
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 export default Main;
