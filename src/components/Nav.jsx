@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import {
   LinkIcon,
   ArrowRightOnRectangleIcon,
-} from '@heroicons/react/24/outline';
+} from "@heroicons/react/24/outline";
 
 function Nav() {
   return (
@@ -39,7 +39,7 @@ function Nav() {
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <Link
+              <NavLink
                 to="/username"
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -49,28 +49,28 @@ function Nav() {
                 aria-expanded="false"
               >
                 Username
-              </Link>
+              </NavLink>
               <ul
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <Link to="/profile" className="dropdown-item" href="#">
+                  <NavLink to="/profile" className="dropdown-item" href="#">
                     Profile
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="links" className="dropdown-item" href="#">
+                  <NavLink to="links" className="dropdown-item" href="#">
                     Link Page
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <Link to="logout" className="dropdown-item" href="#">
+                  <NavLink to="logout" className="dropdown-item" href="#">
                     Logout <ArrowRightOnRectangleIcon width={20} />
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </li>
