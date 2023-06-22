@@ -23,6 +23,12 @@ function Signup() {
       confirmPassword: confirmPasswordRef.current.value,
       userName: userNameRef.current.value,
     };
+
+    if (data.password !== data.confirmPassword) {
+      console.log("Passwords do not match");
+      return;
+    }
+
     try {
       await createUserWithEmailAndPassword(auth, data.email, data.password);
       addDoc(ref, data);
