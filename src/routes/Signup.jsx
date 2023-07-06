@@ -5,8 +5,6 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 function Signup() {
   const auth = getAuth();
-  const firstNameRef = useRef();
-  const lastNameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
@@ -16,12 +14,11 @@ function Signup() {
   const handleSave = async (e) => {
     e.preventDefault();
     let data = {
-      firstName: firstNameRef.current.value,
-      lastName: lastNameRef.current.value,
       email: emailRef.current.value,
       password: passwordRef.current.value,
       confirmPassword: confirmPasswordRef.current.value,
       userName: userNameRef.current.value,
+      createdAt: new Date(),
     };
 
     if (data.password !== data.confirmPassword) {
@@ -35,6 +32,7 @@ function Signup() {
       console.log("User created");
     } catch (err) {
       console.log(err);
+      err.message;
     }
   };
 
@@ -44,35 +42,10 @@ function Signup() {
         <h2>Registration Form</h2>
         <form onSubmit={handleSave}>
           <div className="mb-3">
-            <label htmlFor="firstName" className="form-label">
-              First Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="firstName"
-              name="firstName"
-              required
-              ref={firstNameRef}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="lastName" className="form-label">
-              Last Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="lastName"
-              name="lastName"
-              required
-              ref={lastNameRef}
-            />
-          </div>
-          <div className="mb-3">
             <label htmlFor="email" className="form-label">
               Email
             </label>
+            <span id="emailError" className="form-error"></span>
             <input
               type="email"
               className="form-control"
